@@ -43,7 +43,7 @@ cd terragrunt/external-dns-1
 terragrunt apply
 ```
 ```
-cd terragrunt/external-dns-1
+cd terragrunt/external-dns-2
 terragrunt apply
 ```
 
