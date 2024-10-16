@@ -1,5 +1,15 @@
 ## REDIS Cluster HA 
 
+```
+Assignment:
+
+Create 2 Kubernetes clusters in your preferred cloud platform.
+
+Deploy a Redis cluster across the 2 Kubernetes clusters in a High Availability setup through helm charts only.
+You must have nodes in both kubernetes clusters of the redis HA solution.
+```
+
+
 This project installs a Redis Cluster HA using Sentinel into 2 Kubernetes Clusters
 It uses terragrunt and terraform to define the resources. The main modules are:
 
