@@ -60,14 +60,14 @@ terragrunt apply
 ```
 
 This should create a dns entry for each redis node:
-`redis-node-0.redis.redis1.scalegrid-example.com`
-`redis-node-1.redis.redis1.scalegrid-example.com`
-`redis-node-0.redis.redis2.scalegrid-example.com`
-`redis-node-1.redis.redis2.scalegrid-example.com`
+- `redis-node-0.redis.redis1.scalegrid-example.com`
+- `redis-node-1.redis.redis1.scalegrid-example.com`
+- `redis-node-0.redis.redis2.scalegrid-example.com`
+- `redis-node-1.redis.redis2.scalegrid-example.com`
 
 and also a dns entry for each redis cluster (service):
-`redis.redis1.scalegrid-example.com`
-`redis.redis2.scalegrid-example.com`
+- `redis.redis1.scalegrid-example.com`
+- `redis.redis2.scalegrid-example.com`
 
 This project does not include a LoadBalancer or Proxy to connect to a single endpoint. Connection to any of the clusters will return RO access, for write access you need to connect to the master. To check what is the master you can run:
 
