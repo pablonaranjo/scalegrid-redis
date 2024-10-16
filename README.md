@@ -17,17 +17,17 @@ It uses terragrunt and terraform to define the resources. The main modules are:
 - helm/release (helm release module to deploy redis)
 
 Requirements:
-- terraform
-- terragrunt
-- helm
-- awscli
-- kubectl
+- [terraform](https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli)
+- [terragrunt](https://terragrunt.gruntwork.io/docs/getting-started/install/)
+- [helm](https://helm.sh/docs/intro/install/)
+- [awscli](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html)
+- [kubectl](https://kubernetes.io/docs/tasks/tools/)
 
-- AWS Account
-- AWS VPC
-- AWS VPC Subnets
+- [AWS Account](https://aws.amazon.com/free/?gclid=Cj0KCQjwyL24BhCtARIsALo0fSAux8h9PhdHE_VRhWGb3mZJKsmakMX0n69rQDjn35yfDF81YQ1lm3QaAgsvEALw_wcB&trk=349e66be-cf8d-4106-ae2c-54262fc45524&sc_channel=ps&ef_id=Cj0KCQjwyL24BhCtARIsALo0fSAux8h9PhdHE_VRhWGb3mZJKsmakMX0n69rQDjn35yfDF81YQ1lm3QaAgsvEALw_wcB:G:s&s_kwcid=AL!4422!3!455709741582!e!!g!!aws%20account!10817378576!108173614202&all-free-tier.sort-by=item.additionalFields.SortRank&all-free-tier.sort-order=asc&awsf.Free%20Tier%20Types=*all&awsf.Free%20Tier%20Categories=*all)
+- [AWS VPC](https://console.aws.amazon.com/vpcconsole/home?region=us-east-1#vpcs:)
+- [AWS VPC Subnets](https://console.aws.amazon.com/vpcconsole/home?region=us-east-1#subnets:)
 
-Replace the AWS values into `account.hcl`
+Replace the AWS values into `account.hcl`.
 Also update aws profile in `kubernetes.hcl`
 
 # Deploy 2 Kubernetes Clusters and addons:
