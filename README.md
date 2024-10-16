@@ -31,11 +31,11 @@ cd terragrunt/kubernetes/cluster-1/addon/ebs
 terragrunt apply
 ```
 ```
-cd terragrunt/kubernetes/cluster-2/addon/ebs
+cd terragrunt/kubernetes/cluster-2
 terragrunt apply
 ```
 ```
-cd terragrunt/kubernetes/cluster-2
+cd terragrunt/kubernetes/cluster-2/addon/ebs
 terragrunt apply
 ```
 ```
