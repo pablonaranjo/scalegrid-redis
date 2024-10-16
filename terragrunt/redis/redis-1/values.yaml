@@ -1,0 +1,18 @@
+global:
+  storageClass: gp2
+auth:
+  enabled: false
+replica:
+  replicaCount: 2
+sentinel:
+  enabled: true
+  service:
+    type: "LoadBalancer"
+  configuration: |
+    sentinel known-replica mymaster redis-node-0.redis.redis2.scalegrid-example.com 6379
+    sentinel known-replica mymaster redis-node-1.redis.redis2.scalegrid-example.com 6379
+    sentinel known-sentinel mymaster redis-node-0.redis.redis2.scalegrid-example.com 26379
+    sentinel known-sentinel mymaster redis-node-1.redis.redis2.scalegrid-example.com 26379
+useExternalDNS:
+  enabled: true
+  suffix: redis1.scalegrid-example.com
